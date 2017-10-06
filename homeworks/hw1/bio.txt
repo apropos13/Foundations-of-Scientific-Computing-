@@ -7,3 +7,4 @@ Research interests: Machine Learning, Natural Language Processing
 Advisor's name: Marilyn Walker
 Experience in Scientific Computing: None
 Experience in Linux/Unix: Somewhat
+OS and machine for the class: Linux/iOS and I use a Macbook
