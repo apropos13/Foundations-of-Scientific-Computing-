@@ -1,0 +1,15 @@
+Since I am not able to write functions in the cshrc file I swithced to using bash shell instead. Therefore, 
+since I am working on my local machine running iOs i editted the bash_profile file
+
+The function that I wrote is:
+
+function pwd_up() {                                                                                                                                                                                             
+    parent=$PWD #Define parent to the current directory                                                                                                                                                         
+    for n in $(seq $1)                                                                                                                                                                                          
+    do                                                                                                                                                                                                          
+        parent=$(dirname $parent) #go up until necessairy level                                                                                                                                                 
+    done                                                                                                                                                                                                        
+    echo $parent #output pwf                                                                                                                                                                                    
+    ls $parent #output ls                                                                                                                                                                                       
+}                                                                                                                                                                                                               
+alias 'pwd..'='pwd_up'                                                                                                                                                                                          
