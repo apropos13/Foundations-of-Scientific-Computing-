@@ -1,5 +1,5 @@
 Since I am not able to write functions in the cshrc file I swithced to using bash shell instead. Therefore, 
-since I am working on my local machine running iOs i editted the bash_profile file
+since I am working on my local machine running iOs I editted the .bash_profile file
 
 The function that I wrote is:
 
@@ -9,7 +9,7 @@ function pwd_up() {
     do                                                                                                                                                                                                          
         parent=$(dirname $parent) #go up until necessairy level                                                                                                                                                 
     done                                                                                                                                                                                                        
-    echo $parent #output pwf                                                                                                                                                                                    
-    ls $parent #output ls                                                                                                                                                                                       
+    echo $parent #output pwd                                                                                                                                                                                    
+    # ls $parent #output ls #commented since he specification changed                                                                                                                                                                                       
 }                                                                                                                                                                                                               
 alias 'pwd..'='pwd_up'                                                                                                                                                                                          
