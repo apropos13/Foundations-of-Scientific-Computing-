@@ -1,0 +1,45 @@
+Lauren Benezra
+Sierra Catelani
+Jianhong Chen
+parvin Dadgar
+Rohan Ganpati
+Rohan Ganpati
+Rohan Ganpati
+Huazhi Ge
+Tianrui Guo
+Nathan Heller
+Maria Hovanessian
+Dahyeon Jeong
+Panagiotis Karagiannis
+Adina katz
+Adina Katz
+Zachary Kaufman
+nathan keane
+Nathan Keane
+John Kolar
+Youngjun lee
+Youngjun Lee
+Yixiang Li
+Bhishek Manek
+Bhishek Manek
+Bhishek Manek
+Abtin Moeini
+Jacob NooneWade
+GianCarlo Parico
+Adit Patel
+Anca-Mihaela popescu
+Anca-Mihaela Popescu
+Geetanjali Rakshit
+Abram Rodgers
+martin Rodriguez
+Martin Rodriguez
+Sutirtha Sengupta
+Naishil Shah
+Jayashree Sridhar
+Anuradha Talur
+Trevor Williamson
+
+
+--------------------
+awk '{print $1, $2}' roster.txt | sort -k2 > roster_sort_LastName.txt = 
+take first two cols, sort by second column and store file

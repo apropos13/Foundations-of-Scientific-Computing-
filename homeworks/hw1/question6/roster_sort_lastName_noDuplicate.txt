@@ -1,0 +1,40 @@
+Lauren Benezra
+Sierra Catelani
+Jianhong Chen
+parvin Dadgar
+Rohan Ganpati
+Huazhi Ge
+Tianrui Guo
+Nathan Heller
+Maria Hovanessian
+Dahyeon Jeong
+Panagiotis Karagiannis
+Adina katz
+Zachary Kaufman
+nathan keane
+John Kolar
+Youngjun lee
+Yixiang Li
+Bhishek Manek
+Abtin Moeini
+Jacob NooneWade
+GianCarlo Parico
+Adit Patel
+Anca-Mihaela popescu
+Geetanjali Rakshit
+Abram Rodgers
+martin Rodriguez
+Sutirtha Sengupta
+Naishil Shah
+Jayashree Sridhar
+Anuradha Talur
+Trevor Williamson
+
+
+
+
+
+
+--------------------                                                                                   
+awk '{print $1, $2}' roster.txt | sort -k2 |uniq -i > roster_sort_lastName_noDuplicate.txt
+                                           
