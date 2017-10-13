@@ -1,11 +1,8 @@
+By typing : cat roster.txt | sort -k2 |uniq -i | grep "SCAMM" | sort -r -k2
+we get 5 resutls, namely: 
+
 Abram Rodgers Graduate SCAMMS akrodger@ucsc.edu
 Adit Patel Graduate SCAMMS apatel17@ucsc.edu
-Nathan Keane Graduate SCAMMS nkeane@ucsc.edu
 nathan keane Graduate SCAMMS nkeane@ucsc.edu
 Nathan Heller Graduate SCAMMS nhheller@ucsc.edu
 Tianrui Guo Graduate SCAMMS tguo6@ucsc.edu
-
-
-
-Command used: 
-cat roster.txt | grep "SCAMM" | sort -r -k2
