@@ -1,2 +1,0 @@
- The value of x is   3.16000009     the value of y is -0.999830604     the value of z is   2.16016960    
- The value of i is           3 the value of j is           9 the value of k is          -6
