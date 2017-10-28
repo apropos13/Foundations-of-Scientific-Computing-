@@ -1,0 +1,37 @@
+------- buggy 1---------
+
+run :
+
+gfortran -g buggy_code_1.f90 -o myprog1
+
+then run: 
+valgrind --leak-check=full --dsymutil=yes --track-origins=yes ./myprog1 2> output_1
+
+We see the error occuring on line 37 of the buggy_code_1.f90. The corresponsing valgrind output is:
+
+==7422== Invalid write of size 8
+==7422==    at 0x100000D21: MAIN__ (buggy_code_1.f90:37) 
+==7422==    by 0x100000DA6: main (buggy_code_1.f90:52)
+==7422==  Address 0x100dd9910 is 0 bytes after a block of size 80 alloc'd
+==7422==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==7422==    by 0x100000C77: MAIN__ (buggy_code_1.f90:33)
+==7422==    by 0x100000DA6: main (buggy_code_1.f90:52)
+
+
+------- buggy 2-------
+
+here we initialize some values but not x(8). Later on we 
+try to print out x(8) and valgirnd find out that it has not been initialized.
+
+------- buggy 3-------
+
+we try to access x after it has been freed 
+
+
+
+(b):
+
+Valgirng fails to produce the error when an absolute path to the executable is not given. for example if we copy myprog4 to a location included in PATH and then ask valgirng to show the errors on this file it produces output4 which is the same as output3 but without any line references.
+
+valgrind --leak-check=full --dsymutil=yes --track-origins=yes myprog4 2> output_4
+
