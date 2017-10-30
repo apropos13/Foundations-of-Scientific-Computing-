@@ -39,10 +39,6 @@ program buggy_code_4
   !allocate now that x is freed
 
 
-  
-  !!  your implementation goes here  !! 
-
-
 
 
   
