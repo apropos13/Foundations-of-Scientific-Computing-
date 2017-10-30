@@ -1,29 +1,5 @@
-!!------------------------------------------------------------------
-!! A Fortran example code for finding a root of a user-defined 
-!! function f(x) = 0.
-!! 
-!! This code is written by Prof. Dongwook Lee for AMS 209.
-!!
-!!
-!! * Two methods of iteration:
-!!   1. Newton's method
-!!   2. Modified Newton's method
-!!
-!! * This routine is a driver routine which calls subroutines:
-!!   
-!!   RootFinder:
-!!       |- setup_init (from setup_module)
-!!       |
-!!       |   / newton_method (from findRootMethod_module)
-!!       |- |
-!!       |   \ modified_newton_method (from findRootMethod_module)
-!!       | 
-!!       |- output_write (from output_module)
-!!
-!!------------------------------------------------------------------
 
-   
-program RootFinder
+program pi_approx
 
   !! include a C-type header file:
   !! this is why the file extensions are .F90, instead of .f90
@@ -95,4 +71,4 @@ program RootFinder
   deallocate(  x_history)
   deallocate(res_history)
   
-end program RootFinder
+end program pi_approx
