@@ -50,22 +50,19 @@ program RootFinder
 
   !! Initial values for residual and number of iteration
   residual = 1.e10
-  nIter = 0
+  nIter = 1
   xNew = 0 !starts from 0
   
   !! Call setup_init to initialize the runtime parameters
   call setup_init()
 
   !! allocate arrays with size of a user-defined integer value, maxIter
-  allocate(  x_history(maxIter))
-  allocate(res_history(maxIter))
+  allocate(  x_history(maxIter+1))
+  allocate(res_history(maxIter+1))
 
    do while ((residual > threshold) .and. (nIter < maxIter))
-
-      !! Search using conventional Newton's method
-      print *, 'Xnew =',xNew
-      print *, 'residual = ', residual
-      call pi_summation(nIter,xNew,residual)
+      ! need to set nIter -1 because summation must start at 0 
+      call pi_summation(nIter-1,xNew,residual)
 
       !! Store a newly updated approximation into an array 
       x_history(nIter) = xNew
@@ -78,10 +75,9 @@ program RootFinder
 
    end do
 
-
   !! Prepare to report outputs:
   !! (a) Short summary onto the screen
-  if ((nIter < maxIter) .and. (residual < threshold)) then
+  if ((nIter < maxIter+1) .and. (residual < threshold)) then
      print *, '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
      print *, '             Solution Convergence Summary                          '
      print *, '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'

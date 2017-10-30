@@ -32,13 +32,15 @@ contains
 
     total = f1 - f2 - f3 - f4
 
+    print *, 'piNew before=',piNew
     piNew = piNew + 16.**(-1. * N) * (total)
     !print *, 'i =',N
-    !print *, 'piNew =',piNew
+    print *, 'piNew after=',piNew
     
 
     !residual =  new pi approximation - pi 
     residual = abs(piNew - acos(-1.d0) )
+    !print *, 'Newres =',residual
 
     
   end subroutine pi_summation
