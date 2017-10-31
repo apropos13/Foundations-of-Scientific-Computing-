@@ -24,22 +24,17 @@ program buggy_code_4
 
   !! DO NOT CHANGE BETWEEN LINE 25 AND LINE 29 ----
   implicit none
-  integer ( kind = 4 ) :: n,i
+  integer ( kind = 4 ) :: n
   real (kind = 8), allocatable :: x(:)
 
 
-  n = 100000000
+  n = 10
   !! DO NOT CHANGE BETWEEN LINE 25 AND LINE 29 ----
-  allocate (x(1: n**n)) !allocate array of size n = 10
+  allocate (x(1: n)) !allocate array of size n = 10
 
-  
+  x(1) =x(5)
+
   deallocate ( x )
-  x(1) =3
-
-  !allocate now that x is freed
-
-
-
 
   
   !! DO NOT CHANGE BELOW THIS LINE ----------------

@@ -24,7 +24,7 @@ program buggy_code_3
 
   !! DO NOT CHANGE BETWEEN LINE 25 AND LINE 29 ----
   implicit none
-  integer ( kind = 4 ) :: n,i
+  integer ( kind = 4 ) :: n
   real (kind = 8), allocatable :: x(:)
 
 
@@ -39,12 +39,6 @@ program buggy_code_3
 
   !allocate now that x is freed
   x(1) = 0
-
-
-  
-  !!  your implementation goes here  !! 
-
-
 
 
   

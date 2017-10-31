@@ -24,7 +24,7 @@ program buggy_code_2
 
   !! DO NOT CHANGE BETWEEN LINE 25 AND LINE 29 ----
   implicit none
-  integer ( kind = 4 ) :: n,i
+  integer ( kind = 4 ) :: n
   real (kind = 8), allocatable :: x(:)
 
 

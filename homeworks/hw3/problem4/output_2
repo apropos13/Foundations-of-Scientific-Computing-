@@ -1,174 +1,174 @@
-==7742== Memcheck, a memory error detector
-==7742== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7742== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==7742== Command: ./myprog2
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F06A7: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F06B0: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F1025: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F104C: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F104E: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F10F5: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F1157: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001F1161: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1004E6307: __dtoa (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1004E6342: __dtoa (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1004E636C: __dtoa (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1004E636E: __dtoa (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
-==7742==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001EF247: calculate_sign.isra.0 (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==    by 0x303030303030302F: ???
-==7742==    by 0x10030302F: __quadmath_tens_in_limb (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libquadmath.0.dylib)
-==7742==    by 0x1000077AC: dyld::fastBindLazySymbol(ImageLoader**, unsigned long) (in /usr/lib/dyld)
-==7742==    by 0x9: ???
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001EF8AF: build_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==    by 0x303030303030302F: ???
-==7742==    by 0x77AD00000001002F: ???
-==7742==    by 0xA00000000FFFF: ???
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== Conditional jump or move depends on uninitialised value(s)
-==7742==    at 0x1001EF247: calculate_sign.isra.0 (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
-==7742==    by 0x303030303030302F: ???
-==7742==    by 0x77AD00000001002F: ???
-==7742==    by 0xA00000000FFFF: ???
-==7742==  Uninitialised value was created by a heap allocation
-==7742==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x100000B83: MAIN__ (buggy_code_2.f90:33)
-==7742==    by 0x100000D36: main (buggy_code_2.f90:53)
-==7742== 
-==7742== 
-==7742== HEAP SUMMARY:
-==7742==     in use at exit: 16,729 bytes in 167 blocks
-==7742==   total heap usage: 200 allocs, 33 frees, 34,477 bytes allocated
-==7742== 
-==7742== 72 bytes in 3 blocks are possibly lost in loss record 26 of 45
-==7742==    at 0x100098C7A: calloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==7742==    by 0x10082C89E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
-==7742==    by 0x10082C5C1: map_2_images (in /usr/lib/libobjc.A.dylib)
-==7742==    by 0x100007F7B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
-==7742==    by 0x100008195: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
-==7742==    by 0x1004691DC: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
-==7742==    by 0x10082C073: _objc_init (in /usr/lib/libobjc.A.dylib)
-==7742==    by 0x1003FBE49: _os_object_init (in /usr/lib/system/libdispatch.dylib)
-==7742==    by 0x1003FBDF6: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
-==7742==    by 0x1002A8A01: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
-==7742==    by 0x10001875E: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7742==    by 0x100018961: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
-==7742== 
-==7742== LEAK SUMMARY:
-==7742==    definitely lost: 0 bytes in 0 blocks
-==7742==    indirectly lost: 0 bytes in 0 blocks
-==7742==      possibly lost: 72 bytes in 3 blocks
-==7742==    still reachable: 176 bytes in 4 blocks
-==7742==         suppressed: 16,481 bytes in 160 blocks
-==7742== Reachable blocks (those to which a pointer was found) are not shown.
-==7742== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==7742== 
-==7742== For counts of detected and suppressed errors, rerun with: -v
-==7742== ERROR SUMMARY: 18 errors from 16 contexts (suppressed: 8 from 8)
+==47934== Memcheck, a memory error detector
+==47934== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47934== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==47934== Command: ./myprog2
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F06A7: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F06B0: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F1025: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F104C: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F104E: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F10F5: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F1157: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001F1161: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1004E6307: __dtoa (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1004E6342: __dtoa (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1004E636C: __dtoa (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1004E636E: __dtoa (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050F3DD: __vfprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x100538422: __v2printf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C929: _vsnprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10051C97C: vsnprintf_l (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x10050CD82: snprintf (in /usr/lib/system/libsystem_c.dylib)
+==47934==    by 0x1001F11B9: get_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001EF247: calculate_sign.isra.0 (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==    by 0x303030303030302F: ???
+==47934==    by 0x10030302F: __quadmath_tens_in_limb (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libquadmath.0.dylib)
+==47934==    by 0x10046748D: dyld_stub_binder (in /usr/lib/system/libdyld.dylib)
+==47934==    by 0x37E: ???
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001EF8AF: build_float_string (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==    by 0x303030303030302F: ???
+==47934==    by 0x748E00000001002F: ???
+==47934==    by 0x37F000000010045: ???
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== Conditional jump or move depends on uninitialised value(s)
+==47934==    at 0x1001EF247: calculate_sign.isra.0 (in /usr/local/Cellar/gcc/7.2.0/lib/gcc/7/libgfortran.4.dylib)
+==47934==    by 0x303030303030302F: ???
+==47934==    by 0x748E00000001002F: ???
+==47934==    by 0x37F000000010045: ???
+==47934==  Uninitialised value was created by a heap allocation
+==47934==    at 0x100098616: malloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10000079E: MAIN__ (buggy_code_2.f90:33)
+==47934==    by 0x100000B7E: main (buggy_code_2.f90:53)
+==47934== 
+==47934== 
+==47934== HEAP SUMMARY:
+==47934==     in use at exit: 16,597 bytes in 167 blocks
+==47934==   total heap usage: 200 allocs, 33 frees, 34,345 bytes allocated
+==47934== 
+==47934== 72 bytes in 3 blocks are possibly lost in loss record 26 of 45
+==47934==    at 0x100098C7A: calloc (in /usr/local/Cellar/valgrind/3.13.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47934==    by 0x10082C89E: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==47934==    by 0x10082C5C1: map_2_images (in /usr/lib/libobjc.A.dylib)
+==47934==    by 0x100007F7B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==47934==    by 0x100008195: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==47934==    by 0x1004691DC: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==47934==    by 0x10082C073: _objc_init (in /usr/lib/libobjc.A.dylib)
+==47934==    by 0x1003FBE49: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==47934==    by 0x1003FBDF6: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==47934==    by 0x1002A8A01: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==47934==    by 0x10001875E: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==47934==    by 0x100018961: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==47934== 
+==47934== LEAK SUMMARY:
+==47934==    definitely lost: 0 bytes in 0 blocks
+==47934==    indirectly lost: 0 bytes in 0 blocks
+==47934==      possibly lost: 72 bytes in 3 blocks
+==47934==    still reachable: 176 bytes in 4 blocks
+==47934==         suppressed: 16,349 bytes in 160 blocks
+==47934== Reachable blocks (those to which a pointer was found) are not shown.
+==47934== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==47934== 
+==47934== For counts of detected and suppressed errors, rerun with: -v
+==47934== ERROR SUMMARY: 18 errors from 16 contexts (suppressed: 8 from 8)

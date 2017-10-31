@@ -33,18 +33,13 @@ program buggy_code_1
   allocate (x(1:n)) !allocate array of size n
   x(1) = 1 
 
-  do i = 3, n+1 
+  !fibonacci 
+  do i = 2, n 
     x(i) = x(i) + x(i-1) 
     
   end do
 
-  deallocate ( x )
-
-
-  
-  !!  your implementation goes here  !! 
-
-
+  !deallocate ( x ) Dont deallocate 
 
 
   
