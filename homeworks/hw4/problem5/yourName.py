@@ -1,4 +1,4 @@
-''' Solution to Hw 4 / problem 4 '''
+''' Solution to Hw 4 / problem 5 '''
 
 def print_yourName(l, flag = True):
 	first = l[0]
