@@ -16,7 +16,7 @@ def print_twice(s):
 
 def main():
 	#part d
-	do_twice(print_twice, 'hello world')
+	do_twice(print_twice, 'spam')
 
 if __name__ == '__main__':
 	main()
