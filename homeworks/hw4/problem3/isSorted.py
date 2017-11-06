@@ -9,14 +9,18 @@ def is_sorted(l):
 
 
 def main():
-	l = [1,2,3,6,7,8,9]
-	print(is_sorted(l))
+	#test cases
+	l1 = [1,2,3,6,7,8,9]
+	assert is_sorted(l1) == True, 'List 1 is sorted'
+	print(is_sorted(l1))
 
-	l = [1,2,3,6,7,8,0]
-	print(is_sorted(l))
+	l2 = [1,2,3,6,7,8,0]
+	assert is_sorted(l2) == False, 'List 2 is not sorted'
+	print(is_sorted(l2))
 
-	l = ['c','a']
-	print(is_sorted(l))
+	l3 = ['c','a']
+	assert is_sorted(l3) == False, 'List 3 is not sorted'
+	print(is_sorted(l3))
 	
 
 if __name__ == '__main__':
