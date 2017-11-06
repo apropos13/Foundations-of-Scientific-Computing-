@@ -13,6 +13,7 @@ def print_twice(s):
 
 def main():
 	#part d
+	#this prints 4 times the word 'spam'
 	do_twice(print_twice, 'spam')
 
 if __name__ == '__main__':
