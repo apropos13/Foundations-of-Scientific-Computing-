@@ -5,9 +5,6 @@ def do_twice(f, x):
 	f(x)
 	f(x)
 
-def print_something(something):
-	print(something)
-
 #part c
 def print_twice(s):
 	for i in range(2):
