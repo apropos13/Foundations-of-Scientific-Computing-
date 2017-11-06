@@ -10,12 +10,15 @@ def palindrome(s):
 
 def main():
 	s = "ababa"
+	assert palindrome(s) == True
 	print(palindrome(s))
 
 	s = "abab"
+	assert palindrome(s) == False
 	print(palindrome(s))
 
 	s = "abba"
+	assert palindrome(s) == True
 	print(palindrome(s))
 
 if __name__ == '__main__':
