@@ -17,5 +17,6 @@ def right_justify(s):
 
 def main():
 	right_justify('panos')
+
 if __name__ == '__main__':
 	main()
