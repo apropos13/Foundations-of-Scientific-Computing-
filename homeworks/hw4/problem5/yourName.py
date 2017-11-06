@@ -13,6 +13,9 @@ def print_yourName(l, flag = True):
 
 def main():
 	l = ['panos', 'karagiannis']
+	
+	print_yourName(l)
+
 	print_yourName(l, False)
 
 	
