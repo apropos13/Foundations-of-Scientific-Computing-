@@ -3,7 +3,14 @@ Panagiotis_Karagiannis/ams209/
 Homework 1: (5) 5/5 (6) 7/7 (7) 5/5 (8) 5/5 (9) 4/5
 		- 6c did not remove lower case duplicates
 		- could not run 9
+		
 		29/30
 
 Homework 2: (2) 10/10 (3) 10/10
+
 		 20/20
+
+Homework 3: (1)  10/10  (2)   10/10  (3)  10/10   (4)   5/5
+		       Good work!
+
+		       35/35
