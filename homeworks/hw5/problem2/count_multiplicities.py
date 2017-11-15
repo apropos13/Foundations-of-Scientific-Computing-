@@ -18,13 +18,16 @@ def get_freq(path_to_file = '../words.txt'):
 def main():
 
 	freq = get_freq()
-	print("Examples: ")
-	print r"Frequency of \n:= ", freq['\n']
-	print "Frequency of a:= ", freq['a']
-	print "Frequency of g:= ", freq['g']
-	print "Frequency of p:= ", freq['p']
-	#for k,v in freq.iteritems():
-		#print "key =", k + ' value = ',str(v)
+	#print("Examples: ")
+	#print r"Frequency of \n:= ", freq['\n']
+	#print "Frequency of a:= ", freq['a']
+	#print "Frequency of g:= ", freq['g']
+	#print "Frequency of p:= ", freq['p']
+	for k,v in freq.iteritems():
+		if k == '\n':
+			print r"Frequency of \n:= ", str(v)
+		else:
+			print "Frequency of ", k + ':= ',str(v)
 
 if __name__ == '__main__':
 	main()
