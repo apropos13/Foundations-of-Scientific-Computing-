@@ -42,10 +42,9 @@ def main():
 	l_all = read_all()
 	
 	#TO PRINT ALL WORDS UNCOMMENT THE FOLLOWING LINE
-	print l_all
-	#print "Number of all words in words.txt = ", len(l_all)
+	#print l_all
+	print "Number of all words in words.txt = ", len(l_all)
 
 if __name__ == '__main__':
 	main()
 
-	
