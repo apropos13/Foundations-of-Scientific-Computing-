@@ -4,12 +4,15 @@ Write a function which reads the first N many words from the file
  N is a user input number. read_all functions as a wrapper function for
  read_N and is used to read all the lines from the given file
 '''
-def read_N(N, read_all = False, path_to_file = '../words.txt'):
+
+#read the first N lines
+def read_N(N = 10, read_all = False, path_to_file = '../words.txt'):
 	l = list() #call default constructor
 
 	with open(path_to_file) as f:
 		counter = 1 
 		for line in f:
+			# either read as many as N lines or all of them
 			if counter <= N or read_all:
 				l.append(line)
 				counter += 1
@@ -17,17 +20,22 @@ def read_N(N, read_all = False, path_to_file = '../words.txt'):
 				break
 	return l
 
-#TODO: answer the second subpart of Q1
+#Wrapper function to call read_N to read ALL lines 
 def read_all(path_to_file = '../words.txt'):
 	''' Calls read_N with arguments to read all lines '''
-	return read_N(1, read_all = True) #value of N doest affect anything
+	return read_N(read_all = True) 
 
 def main():
-	#example usages 
-	l = read_N(10)
-	print l
+	#example usages
+
+	#read the first 10 lines 
+	n = 10 
+	l = read_N(N = n)
+	print "First 10 words of the file: \n", l
+
+	#read all lines print number of words in file
 	l_all = read_all()
-	print len(l_all)
+	print "Number of words in list_all = ", len(l_all)
 
 if __name__ == '__main__':
 	main()

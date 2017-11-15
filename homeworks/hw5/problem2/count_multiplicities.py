@@ -1,5 +1,6 @@
 '''
-Similar to part a but replacing list with dict.
+Similar to Problem 1/part(a) but replacing list with dict
+and counting frequencies of chars.
 '''
 def get_freq(path_to_file = '../words.txt'):
 	l = dict() #call default constructor
@@ -17,7 +18,11 @@ def get_freq(path_to_file = '../words.txt'):
 def main():
 
 	freq = get_freq()
-	print freq['\n']
+	print("Examples: ")
+	print r"Frequency of \n:= ", freq['\n']
+	print "Frequency of a:= ", freq['a']
+	print "Frequency of g:= ", freq['g']
+	print "Frequency of p:= ", freq['p']
 	#for k,v in freq.iteritems():
 		#print "key =", k + ' value = ',str(v)
 
