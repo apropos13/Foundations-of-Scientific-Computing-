@@ -7,9 +7,10 @@ def read_N(N, read_all = False, path_to_file = '../words.txt'):
 	with open(path_to_file) as f:
 		counter = 1 
 		for line in f:
+			line = line.strip('\n')
 			if counter <= N or read_all:
 				if line not in l: #check if key does not exist 
-					l[line] = 1 # random value
+					l[line] = None # random value
 				counter += 1
 			else:
 				break
@@ -22,10 +23,22 @@ def read_all(path_to_file = '../words.txt'):
 
 def main():
 	#example usages 
-	l = read_N(10)
+	try:
+		n = int(raw_input("Please input the number of words to read (number only): "))
+	except ValueError as e:
+		print "Number of words must be an integer. Try again.\nBye"
+		exit()
+
+
+	l = read_N(n)
+	assert(len(l) == n) # sanity check
 	print l
+
 	l_all = read_all()
-	print len(l_all)
+	#TO PRINT ALL WORDS UNCOMMENT THE FOLLOWING LINE
+	#print l_all
+	print "Number of all words in words.txt = ", len(l_all)
+
 
 if __name__ == '__main__':
 	main()

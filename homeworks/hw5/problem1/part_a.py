@@ -14,7 +14,7 @@ def read_N(N = 10, read_all = False, path_to_file = '../words.txt'):
 		for line in f:
 			# either read as many as N lines or all of them
 			if counter <= N or read_all:
-				l.append(line)
+				l.append(line.strip())
 				counter += 1
 			else:
 				break
@@ -27,15 +27,25 @@ def read_all(path_to_file = '../words.txt'):
 
 def main():
 	#example usages
+	try:
+		n = int(raw_input("Please input the number of words to read (number only): "))
+	except ValueError as e:
+		print "Number of words must be an integer. Try again.\nBye"
+		exit()
 
-	#read the first 10 lines 
-	n = 10 
+	#read the first 10 lines  
 	l = read_N(N = n)
-	print "First 10 words of the file: \n", l
+	assert(len(l) == n) # sanity check
+	print "First "+ str(n)+" words of the file: \n", l
 
 	#read all lines print number of words in file
 	l_all = read_all()
-	print "Number of words in list_all = ", len(l_all)
+	
+	#TO PRINT ALL WORDS UNCOMMENT THE FOLLOWING LINE
+	print l_all
+	#print "Number of all words in words.txt = ", len(l_all)
 
 if __name__ == '__main__':
 	main()
+
+	
