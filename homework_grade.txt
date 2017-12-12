@@ -24,3 +24,20 @@ Homework 5:  (1) 10/10 (2) 10/10 (3) 10/10 (4) 5/5
 		       Good work!
 
 		       35/35
+
+Homework 6:
+
+	pyRun
+	+3/3 compiles Fortran code
+	+3/3 writes 3 init files
+	+3/3 executes 3 runs
+	+3/3 plots resuts to screen and file
+
+	Report.
+	+10/10 discuss convergent behavior of two initial guesses
+
+	Webpage submission.
+	+2/2
+		 Great report!
+
+	Total score: 24/24
