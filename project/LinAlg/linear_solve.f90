@@ -15,14 +15,20 @@ real, dimension(:), allocatable :: y,x
 logical :: partial_pivot
 CHARACTER (LEN=*), PARAMETER :: ex_number= "1"
 
+!set partial_pivot to false to run without partial pivoting
+!set partial_pivot to true to run with partial pivoting
+partial_pivot = .True.
+if (partial_pivot) then
+	print*,"--> Running WITH partial pivoting"
+else
+	print*,"--> Running WITHOUT partial pivoting"
+endif
+
 call read_init_files()
 
 
 call print_A_b(A, b)
 
-!set partial_pivot to false to run without partial pivoting
-!set partial_pivot to true to run with partial pivoting
-partial_pivot = .False.
 call LU(A,b, L, U, partial_pivot)
 call forward(L,y,b)
 call backward(U,x,y)

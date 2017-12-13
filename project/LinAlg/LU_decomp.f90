@@ -105,7 +105,7 @@ subroutine all_swaps(b_swap, L, U, k)
 	implicit none
     real :: b_swap(:), temp_b_swap
     real, dimension(:,:), allocatable :: L, U
-    real, dimension(size(b_swap)) :: temp_U, temp_L
+    real, dimension(size(b_swap)-k+1) :: temp_U, temp_L
 
     integer :: k , max_index
 
