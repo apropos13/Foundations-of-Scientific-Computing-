@@ -38,7 +38,7 @@ contains
     call read_initFileChar('rootFinder.init','method_type',methodType)
     call read_initFileInt ('rootFinder.init','multiplicity', multiplicity)
     call read_initFileInt ('rootFinder.init', 'ftn_type', ftnType)
-    if (ftnType > 2) then
+    if (ftnType > 4) then
        print*,'Not a valid function input type.'
        print*,'Aborting now!'
        stop

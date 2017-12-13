@@ -26,10 +26,8 @@ def write_runtimeParemeters(A,b):
 	# sort in descending version order using generation time. 
 	#Do that in order not to  overwrite existing versions while renaming
 	existing_versions.sort(key=os.path.getmtime)
-	print existing_versions
 	if len(existing_versions) != 0:
 		for file_name in existing_versions:
-			print 'f name =', file_name
 			# will get component if version is more than one digit
 			version_components = [s for s in file_name if s.isdigit()]
 			#now concat digits and get final version
@@ -46,10 +44,7 @@ def write_runtimeParemeters(A,b):
 					counter += 1
 				else:
 					new_name = new_name + c
-			print new_name
 			os.rename(file_name, new_name)
-
-
 
 
 	A_fname = fortran_rpath+"A_"+str(1)+".dat"
@@ -200,6 +195,7 @@ def plot_data(plotFileName1, plotFileName2,A,b, id):
 
 
 def case1(run_id=1):
+	print "################### Example 1 ################### \n"
 	A = np.zeros(shape = (3,3))
 	b = np.zeros(3)
 
@@ -211,8 +207,10 @@ def case1(run_id=1):
 	run_lu(A, b)
 	solution_check(A, b)
 	plot_data('plot_line_%s.pdf' %(str(run_id)), 'plot_matrix_%s.pdf' %(str(run_id)), A, b, id = run_id)
+	print "################### End of Example 1 ################### \n"
 
 def case2(run_id=2):
+	print "################### Example 2 ################### \n"
 	A = np.zeros(shape = (3,3))
 	b = np.zeros(3)
 
@@ -226,7 +224,10 @@ def case2(run_id=2):
 	solution_check(A, b)
 	plot_data('plot_line_%s.pdf' %(str(run_id)), 'plot_matrix_%s.pdf' %(str(run_id)), A, b,  id = run_id)
 
+	print "################### End of Example 2 ################### \n"
+
 def case3(run_id=3):
+	print "################### Example 3 ################### \n"
 	A = np.zeros(shape = (3,3))
 	b = np.zeros(3)
 
@@ -239,7 +240,7 @@ def case3(run_id=3):
 	run_lu(A, b)
 	solution_check(A, b)
 	plot_data('plot_line_%s.pdf' %(str(run_id)), 'plot_matrix_%s.pdf' %(str(run_id)), A, b,  id = run_id)
-
+	print "################### End of Example 3 ################### \n"
 
 def main():
 	# call make before the run

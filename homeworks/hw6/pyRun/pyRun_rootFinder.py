@@ -113,12 +113,13 @@ def plot_data(plotFileName, isLast = False):
 
 	ax1.grid(linestyle='--', zorder=0)
 	plt.xlim([min(n_iter)-0.4,max(n_iter)+0.4])
+	plt.ylim([min(approx)-0.09,max(approx)+0.09])
 
 
 	plt.ylabel("Root", fontsize=14)
 	plt.xlabel("Number of iterations ", fontsize=14)
 	plt.title("Root convergence", fontsize=16, fontweight='bold')
-	legend = ax1.legend(loc='lower right', shadow=True)
+	legend = ax1.legend(loc='upper right', shadow=True)
 	#plt.savefig("stack_backoff.pdf")
 
 
@@ -170,11 +171,11 @@ def main():
 	#parameters 
 	name = 'newt'
 	method = 'newton'
-	x_begin = -10
-	x_end = 10
+	x_begin = -40
+	x_end = 40
 	m_iter = 1000
-	function_type = 2
-	init_guess = 0.8
+	function_type = 3
+	init_guess = 1
 	mult = 2
 
 	####################
@@ -184,11 +185,11 @@ def main():
 	for t in thresholds:
 		if t == thresholds[-1]:
 			run_rootFinder(name, method, x_begin, x_end, m_iter,t, function_type, init_guess, mult)
-			plot_name = 'result_'+ str(function_type)+ '_' + "%1.*e"%(0,t)
+			plot_name = 'result_'+ str(function_type)+ '_' + "%1.*e"%(0,t) + '.pdf'
 			plot_data(plot_name, isLast = True)
 		else:
 			run_rootFinder(name, method, x_begin, x_end, m_iter,t, function_type, init_guess, mult)
-			plot_name = 'result_'+ str(function_type)+ '_' + "%1.*e"%(0,t)
+			plot_name = 'result_'+ str(function_type)+ '_' + "%1.*e"%(0,t) +'.pdf'
 			plot_data(plot_name)
 
 

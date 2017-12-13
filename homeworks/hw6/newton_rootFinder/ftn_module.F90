@@ -30,6 +30,12 @@ contains
        !! (2) f(x) = (x-1)log_10(x)
        !!f = (x - 1.) * log10(x)
        f = (x - 1.) * (x - 2.)
+    elseif (ftnType == 3) then
+       !! (3) f(x) = exp(2. * x + 3) - exp(x)
+       f = exp(2. * x + 3) - exp(x)
+    elseif (ftnType == 4) then
+       !! (4) f(x) = 4x - e^(ln(x))
+       f = 4. * x +  x**2 + 4
     end if
 
   end subroutine ftn_eval
@@ -49,6 +55,12 @@ contains
        !! (2) derivative of the second function
        !fprime = log10(x) + (x - 1.)/x
        fprime = (x-1.) + (x-2.)
+    elseif (ftnType == 3) then
+       !! (3) derivative of the third function
+       fprime = 2. * exp(2. * x + 3) - exp(x)
+    elseif (ftnType == 4) then
+       !! (4) derivative of the fourth function
+       fprime = 4.0 + 2. * x
     end if
 
   end subroutine ftn_derivative
