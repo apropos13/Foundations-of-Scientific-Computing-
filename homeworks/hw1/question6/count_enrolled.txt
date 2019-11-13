@@ -1,1 +1,0 @@
-We can type cat roster_sort_lastName_noDuplicate.txt | wc -l to get that the total number of students is 31 

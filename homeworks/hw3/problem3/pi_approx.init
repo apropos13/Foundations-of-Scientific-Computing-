@@ -1,3 +1,0 @@
-run_name	'pi' # [char] Specify your output file name, e.g., 'rootFinder_[run_name].dat'
-max_iter	 100    # [int]  Maximum number of iteration
-threshold	 1.e-10   # [real] Threshold value for solution convergence

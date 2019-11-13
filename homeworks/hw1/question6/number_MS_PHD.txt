@@ -1,6 +1,0 @@
-To find the number of MS, PHD students we do, respectively:
-cat roster.txt |sort -f | uniq -i | grep "MS" | wc -l 
-cat roster.txt |sort -f | uniq -i | grep "PHD" | wc -l 
-
-
-And we find that there are in total 15 PHD students and 13 MS students in the class.
